@@ -32,7 +32,7 @@ echo -e "${YELLOW}----------------------------------------------------------${NC
 echo -e "  Sugeng rawuh wonten JOYS Script Installer ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e "     This Will Quick Setup VPN Server On Your Server"
 echo -e "         Auther : ${green}JoysVpn ${NC}${YELLOW}(${NC} ${green}Joys Project ${NC}${YELLOW})${NC}"
-echo -e "       © Lynz Project & Tekiro Project ${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
+echo -e "       © JOYS Project ${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 2
@@ -727,10 +727,10 @@ print_success "Swap 1 G"
 function ins_Fail2ban(){
 clear
 print_install "Menginstall Fail2ban"
-#apt -y install fail2ban > /dev/null 2>&1
-#sudo systemctl enable --now fail2ban
-#/etc/init.d/fail2ban restart
-#/etc/init.d/fail2ban status
+apt -y install fail2ban > /dev/null 2>&1
+sudo systemctl enable --now fail2ban
+/etc/init.d/fail2ban restart
+/etc/init.d/fail2ban status
 
 # Instal DDOS Flate
 if [ -d '/usr/local/ddos' ]; then
